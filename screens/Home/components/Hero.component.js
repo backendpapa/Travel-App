@@ -2,6 +2,7 @@ import React from 'react'
 import { View, Image, Text, ImageBackground, TouchableHighlight, TouchableOpacity } from 'react-native'
 import { image } from '../../../styles/assets/Index.images'
 import { styles } from '../../../styles/css/Index.css'
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 
 
@@ -37,8 +38,9 @@ function Hero() {
                 <View  style={{position:'absolute',bottom:10,padding:25}} >
                     <Text style={{fontSize:30,fontWeight:'bold',color:'white',marginRight:100}}>Where's your next destination?</Text>
                     <View style={{display:'flex',flexDirection:'row',marginTop:25,marginBottom:20,}}>
-                        <View style={{height:80,width:80,backgroundColor:'rgba(255,255,255,0.5)',borderRadius:15,justifyContent:'center',alignItems:'center',elevation:5}}>
-                            <Image style={{width:50,height:50}} source={{uri:"https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/ffffff/external-flight-airport-icongeek26-glyph-icongeek26-3.png"}}></Image>
+                        <View style={{height:80,width:80,backgroundColor:'rgba(255,255,255,0.5)',borderRadius:15,justifyContent:'center',alignItems:'center'}}>
+                            <Image style={{width:50,height:50}} source={{uri:"https://img.icons8.com/material-rounded/40/ffffff/airplane-take-off.png"}}></Image>
+                           {/* <Icon name="plane"  color="#900" /> */}
                         </View>
                     </View>
                 </View>
