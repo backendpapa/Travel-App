@@ -18,6 +18,23 @@ const stylesheet = new StyleSheet.create({
     },
     heroContainer:{
         height:'60%'
+    },
+    heroImageBackground:{
+        height: '100%', 
+        width: '100%'
+    },
+    heroMajorContainer:{
+        padding: 15, 
+        flex: 1 
+    },
+    heroMinorContainer:{
+        marginTop: '20%'
+    },
+    flexContainerOne:{
+        display: 'flex', 
+        flexDirection: 'row', 
+        alignItems: 'center', 
+        padding: 10
     }
 })
 export const homeStyle={
