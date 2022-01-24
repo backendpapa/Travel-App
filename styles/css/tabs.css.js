@@ -20,6 +20,15 @@ const stylesheet = new StyleSheet.create({
         paddingTop: 10, 
         paddingBottom: 10, 
         marginTop:-13   
+    },
+    barStyle:{
+        backgroundColor: 'white', 
+        margin: 20, 
+        padding: 5, 
+        position: 'absolute',
+        overflow: 'hidden',
+        borderRadius: 30,
+        elevation: 5,
     }
 })
 export const tabStyle={
