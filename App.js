@@ -23,7 +23,9 @@ const App = () => {
   return (
     // <SafeAreaView >
     <NavigationContainer>
-       <Stack.Navigator initialRouteName="Tabs">
+       <Stack.Navigator screenOptions={{
+            headerShown:false
+        }} initialRouteName="Tabs">
         <Stack.Screen name="Tabs" component={Tabs} />
         <Stack.Screen name="Search" component={Search} />
         <Stack.Screen name="Guide" component={Guide} />
