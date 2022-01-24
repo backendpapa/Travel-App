@@ -1,6 +1,6 @@
-
-
 import React from 'react';
+import {createStackNavigator} from '@react-navigation/stack'
+import { NavigationContainer } from '@react-navigation/native';
 import {
   SafeAreaView,
   ScrollView,
@@ -10,19 +10,28 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import {Home,Search,Trip,Guide} from './screens/Index'
+import Tabs from './navigation/tabs';
 
 
 
-
+const Stack=createStackNavigator()
 
 const App = () => {
 
 
   return (
-    <SafeAreaView >
-      <Text>Hello world</Text>
+    // <SafeAreaView >
+    <NavigationContainer>
+       <Stack.Navigator initialRouteName="Tabs">
+        <Stack.Screen name="Tabs" component={Tabs} />
+        <Stack.Screen name="Search" component={Search} />
+        <Stack.Screen name="Guide" component={Guide} />
+        <Stack.Screen name="Trip" component={Trip} />
+     </Stack.Navigator>
+    </NavigationContainer>
 
-    </SafeAreaView>
+    // </SafeAreaView>
   );
 };
 

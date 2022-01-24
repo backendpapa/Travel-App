@@ -1,11 +1,11 @@
 import React from 'react'
 import {View,Text} from 'react-native'
 
-function Search(){
+function Trip(){
     return (
         <View>
-            <Text>Search</Text>
+            <Text>Trip</Text>
         </View>
     )
 }
-export default Search;
+export default Trip;
