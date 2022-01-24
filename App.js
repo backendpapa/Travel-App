@@ -10,7 +10,9 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-import {Home} from './screens/Index'
+import {Home,Search,Trip,Guide} from './screens/Index'
+import Tabs from './navigation/tabs';
+
 
 
 const Stack=createStackNavigator()
@@ -21,8 +23,11 @@ const App = () => {
   return (
     // <SafeAreaView >
     <NavigationContainer>
-       <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={Home} />
+       <Stack.Navigator initialRouteName="Tabs">
+        <Stack.Screen name="Tabs" component={Tabs} />
+        <Stack.Screen name="Search" component={Search} />
+        <Stack.Screen name="Guide" component={Guide} />
+        <Stack.Screen name="Trip" component={Trip} />
      </Stack.Navigator>
     </NavigationContainer>
 
